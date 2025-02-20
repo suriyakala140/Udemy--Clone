@@ -118,7 +118,7 @@ body {
   top: 40%;
   animation-name: zoom;
   animation-duration: 2s;
-  animation-iteration-count: infinite;
+  animation-iteration-count:inherit;
   cursor: pointer;
   
 }
@@ -235,8 +235,13 @@ h3 p {
   color: white;
   gap: 20px;
   cursor: pointer;
-  
 }
+/* .footer__container:hover{
+  transition: 1s;
+  background-color: transparent;
+  color: hsl(0, 26%, 95%);
+  border: solid #a435f0 2px;
+} */
 .footer__container{
   display: flex;
   gap: 50px;
@@ -295,6 +300,13 @@ h3 p {
  @media screen and (max-width:600px) {
   .sale-image__1{
    font-size: 5px;
+   margin-right: 40px;
+  } 
+ }
+ @media screen and (max-width:600px) {
+  .sale-image img{
+    width: 80%;
+    margin-right: 10px;
    
   } 
  }
