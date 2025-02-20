@@ -44,6 +44,12 @@ body {
   align-items: center;
   cursor: pointer;
 }
+
+.navbar__s4{
+  display:none;
+  cursor: pointer;
+
+}
 /* My learning popup */
 .MyLearning{
   position: relative;
@@ -91,8 +97,8 @@ body {
 }
 .sale-image img {
   object-fit:fill;
-  width: 90%;
-  margin-left: 28px;
+  width: 85%;
+  margin-left: 30px;
   padding-left: 20px;
   padding-bottom: 20px;
   padding-right: 20px;
@@ -113,6 +119,7 @@ body {
   animation-name: zoom;
   animation-duration: 2s;
   animation-iteration-count: infinite;
+  cursor: pointer;
   
 }
 @keyframes zoom{
@@ -138,26 +145,25 @@ body {
   justify-content: space-between;
   margin-top: 10px;
 }
-.course-card1 {
-  width: 20%;
+.course-card {
+  flex-grow: 1;
+  flex-basis: 20%;
+  margin: 5px;
   background-color: #f6f2f9;
   border-radius: 10px;
   border: solid #0a0008e6 3px;
   cursor: pointer;
 }
-.course-card1:hover{
-  transition: 1s;
-  transform: rotateX(180deg);
-}
-.course-card1 img {
+
+.course-card img {
   width: 100%;
   height: 50%;
 }
-.course-card1,
+.course-card,
 h3 p {
   padding: 10px;
 }
-.course-card1 p {
+.course-card p {
   padding-right: 10px;
 }
 .topics {
@@ -200,7 +206,9 @@ h3 p {
   margin-top: 10px;
 }
 .course-cards{
-  width: 20%;
+  flex-grow: 1;
+  flex-basis: 20%;
+  margin: 5px;
   background-color: #f6f2f9;
   border-radius: 10px;
   border: solid #0a0008e6 3px;
@@ -226,6 +234,7 @@ h3 p {
   background-color: #111116;
   color: white;
   gap: 20px;
+  cursor: pointer;
   
 }
 .footer__container{
@@ -247,3 +256,47 @@ h3 p {
   justify-content: center;
 
 }
+
+/* Media Queries */
+
+@media screen and (max-width:800px) {
+  body{
+    font-size: 10px;
+  } 
+}
+@media screen and (max-width:500px) {
+ .course-card{
+  flex-basis: 40%;
+ } 
+}
+@media screen and (max-width:500px) {
+  .course-cards{
+   flex-basis: 40%;
+  } 
+ }
+
+ @media screen and (max-width:600px) {
+  .categories{
+    display: none;
+  } 
+ }
+ @media screen and (max-width:600px) {
+  .navbar__s2,.navbar__s3{
+    display: none;
+  } 
+ }
+ @media screen and (max-width:600px) {
+  .navbar__s4{
+    display:block;
+    
+  } 
+ }
+
+ @media screen and (max-width:600px) {
+  .sale-image__1{
+   font-size: 5px;
+   
+  } 
+ }
+
+
